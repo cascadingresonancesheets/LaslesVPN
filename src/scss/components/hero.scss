@@ -1,0 +1,141 @@
+.hero {
+  background-image: url("./img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 330px) 45px;
+  padding-bottom: 95px;
+
+  @media screen and (max-width: 992px) {
+    background-image: none;
+  }
+
+  &__wrapper {
+    padding-top: 45px;
+  }
+
+  &__content {
+    max-width: 555px;
+    margin-right: 40px;
+    margin-bottom: 128px;
+  }
+
+  &__title {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__content {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      padding-top: 0;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    &__text {
+      padding-bottom: 50px;
+      text-align: center;
+    }
+  }
+}
+
+.stats {
+  padding: 36px 90px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 30px 54px rgba(#000, 0.05);
+
+  @media screen and (max-width: 992px) {
+    padding: 36px 64px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+
+  &__divider {
+    display: block;
+    background-color: #eeeff2;
+    height: 125px;
+    width: 1px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.stats-item {
+  padding-left: 90px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  &__value {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 5px;
+    opacity: 0;
+    animation: fadeIn 0.25s forwards ease-in;
+  }
+
+  &__caption {
+    display: block;
+    font-size: 20px;
+    color: $text;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-left: 72px;
+
+    &__value {
+      font-size: 19px;
+    }
+
+    &__caption {
+      font-size: 16px;
+    }
+  }
+
+  &_user {
+    background-image: url("./img/stats-user.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &_locations {
+    background-image: url("./img/stats-location.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &_servers {
+    background-image: url("./img/stats-server.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}

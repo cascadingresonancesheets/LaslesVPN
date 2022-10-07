@@ -1,0 +1,132 @@
+.header {
+  background-color: #fff;
+  padding: 45px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 60;
+
+  @media screen and (max-width: 1200px) {
+    padding: 24px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    align-items: center;
+    grid-template: auto / 150px 1fr auto;
+    position: relative;
+    background-color: #fff;
+
+    @media screen and (max-width: 1200px) {
+      grid-template: repeat(3, auto) / 150px auto;
+    }
+  }
+}
+
+.header-nav {
+  display: block;
+  justify-self: center;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    line-height: 45px;
+    color: $text;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &_active {
+    display: flex;
+  }
+}
+
+.header-btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+    flex-direction: column-reverse;
+    gap: 5px;
+    padding-top: 20px;
+
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  &__sign-in {
+    color: $black;
+    font-weight: 500;
+    height: 45px;
+    transition: color 0.16s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__sign-up {
+    padding: 0 45px;
+    height: 45px;
+    font-weight: 500;
+    color: $accent;
+    border: 1px solid $accent;
+    border-radius: 50px;
+    transition: color 0.16s;
+
+    &:hover {
+      color: #fff;
+      background-color: $accent;
+    }
+
+    @media screen and (max-width: 1200px) {
+      color: #fff;
+      background-color: $accent;
+    }
+  }
+
+  &_active {
+    display: flex;
+  }
+}
+
+.burger-btn {
+  display: none;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+    transform: translateX(16px);
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $accent;
+    }
+  }
+}

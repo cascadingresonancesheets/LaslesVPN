@@ -1,0 +1,119 @@
+.plans-section {
+  background: linear-gradient(#f8f8f8, #fff);
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  &__plans-list {
+    margin-top: 60px;
+  }
+}
+
+.plans-list {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
+}
+
+.plan-item {
+  background-color: #fff;
+  background-image: url("./img/plan-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  width: 330px;
+  padding: 245px 25px 50px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+
+  @media screen and (max-width: 390px) {
+    width: 100%;
+  }
+
+  &_hot {
+    border: 2px solid $accent;
+  }
+
+  &__title {
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: $black;
+    text-align: center;
+  }
+
+  &__list {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  &__feature {
+    padding-left: 44px;
+    background-image: url("./img/icons/list2.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    line-height: 24px;
+    font-size: 14px;
+    color: $text;
+    text-align: left;
+
+    & + & {
+      margin-top: 13px;
+    }
+  }
+
+  &__price {
+    margin-top: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    color: $black;
+
+    span {
+      font-weight: 400;
+      color: $text;
+    }
+  }
+
+  &__btn {
+    display: block;
+    font-weight: 700;
+    color: $accent;
+    background-color: #fff;
+    border: 2px solid $accent;
+    border-radius: 50px;
+    width: 178px;
+    height: 45px;
+    margin: 0 auto;
+    transition: 0.2s;
+    position: relative;
+
+    &:hover {
+      color: #fff;
+      background-color: $accent;
+    }
+
+    &_hot {
+      color: #fff;
+      background-color: $accent;
+
+      &:hover {
+        background-color: darken($accent, 14%);
+        border-color: darken($accent, 14%);
+      }
+    }
+  }
+}

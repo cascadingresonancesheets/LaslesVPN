@@ -1,0 +1,257 @@
+doctype html
+html(lang="en")
+  head
+    include components/meta
+    title LaslesVPN - Landing Page
+  body.page
+    .backdrop
+
+    // HEADER START
+    header.header
+      .wrapper.header__wrapper
+        span.logo
+          img(src="./img/logo.svg", alt="LaslesVPN Logo")
+
+        nav.header-nav
+          ul.header-nav__list
+            li.header-nav__item
+              a.header-nav__link(href="#") About
+            li.header-nav__item
+              a.header-nav__link(href="#") Features
+            li.header-nav__item
+              a.header-nav__link(href="#") Pricing
+            li.header-nav__item
+              a.header-nav__link(href="#") Testimonials
+            li.header-nav__item
+              a.header-nav__link(href="#") Help
+        .header-btns
+          button.header-btns__sign-in Sign In
+          button.header-btns__sign-up Sign Up
+
+        button.burger-btn(aria-label="Toggle navigation")
+          span
+          span
+          span
+    // HEADER END
+
+    // MAIN START
+    main.page__content
+
+      // HERO START
+      .hero
+        .wrapper.hero__wrapper
+          .hero__content
+            h1.hero__title.title Want anything to be easy with <b>LaslesVPN</b>.
+            p.hero__text.text Provide a network for all your needs with ease and fun using <b>LaslesVPN</b> discover interesting features from us.
+            button.hero__btn.big-btn Get Started
+          .hero__stats.stats
+            .stats__item.stats-item.stats-item_user
+              span.stats-item__value
+                span#userValue 90
+                span +
+              span.stats-item__caption Users
+            span.stats__divider
+            .stats__item.stats-item.stats-item_locations
+              span.stats-item__value
+                span#locationsValue 30
+                span +
+              span.stats-item__caption Locations
+            span.stats__divider
+            .stats__item.stats-item.stats-item_servers
+              span.stats-item__value
+                span#serversValue 50
+                span +
+              span.stats-item__caption Servers
+      // HERO END
+
+      // FEATURES START
+      section.features.section
+        .wrapper.features__wrapper
+          .features__content
+            h2.sub-title.section__title.features__title We Provide Many Features You Can Use
+            p.text.features__text.section__text You can explore the features that we provide with fun and have their own functions each feature.
+            ul.features-list.features__list
+              li.features-list__item Powerfull online protection.
+              li.features-list__item Internet without borders.
+              li.features-list__item Supercharged VPN.
+              li.features-list__item No specific time limits.
+      // FEATURES END
+
+      // PLANS START
+      section.plans-section.section
+        .wrapper
+          h2.sub-title.section__title Choose Your Plan
+          p.text.section__text Let's choose the package that is best for you and explore it happily and cheerfully.
+          ul.plans-list.plans-section__plans-list
+            li.plans-list__item.plan-item
+              h3.plan-item__title Free Plan
+              ul.plan-item__list
+                li.plan-item__feature Unlimited Bandwitch
+                li.plan-item__feature Encrypted Connection
+                li.plan-item__feature No Traffic Logs
+                li.plan-item__feature Works on All Devices
+              p.plan-item__price Free
+              button.plan-item__btn Select
+
+            li.plans-list__item.plan-item
+              h3.plan-item__title Standard Plan
+              ul.plan-item__list
+                li.plan-item__feature Unlimited Bandwitch
+                li.plan-item__feature Encrypted Connection forever and ever
+                li.plan-item__feature No Traffic Logs
+                li.plan-item__feature Works on All Devices
+                li.plan-item__feature Connect Anyware
+              p.plan-item__price $9 <span>/ mo</span>
+              button.plan-item__btn Select
+
+            li.plans-list__item.plan-item.plan-item_hot
+              h3.plan-item__title Premium Plan
+              ul.plan-item__list
+                li.plan-item__feature Unlimited Bandwitch
+                li.plan-item__feature Encrypted Connection
+                li.plan-item__feature No Traffic Logs
+                li.plan-item__feature Works on All Devices
+                li.plan-item__feature Connect Anyware
+                li.plan-item__feature Get New Features
+              p.plan-item__price $12 <span>/ mo</span>
+              button.plan-item__btn.plan-item__btn_hot Select
+      // PLANS END
+      
+      // GLOBAL START
+      section.section.global
+        .wrapper
+          h2.sub-title.section__title Huge Global Network of&nbsp;Fast VPN
+          p.text.section__text.global__text See <b>LaslesVPN</b> everywhere to make it easier for you when you move locations.
+          img.global__map(src="./img/map.png", alt="LaslesVPN Global Network" loading="lazy")
+          ul.partners.global__partners
+            li.partners__item
+              img(src="./img/partners/partner-1.png", alt="" loading="lazy")
+            li.partners__item
+              img(src="./img/partners/partner-2.png", alt="" loading="lazy")
+            li.partners__item
+              img(src="./img/partners/partner-3.png", alt="" loading="lazy")
+            li.partners__item
+              img(src="./img/partners/partner-4.png", alt="" loading="lazy")
+            li.partners__item
+              img(src="./img/partners/partner-5.png", alt="" loading="lazy")
+      // GLOBAL END
+
+      // TESTIMONIALS START
+      section.section.testimonials
+        .wrapper
+          h2.sub-title.section__title Trusted by&nbsp;Thousands of&nbsp;Happy Customer
+          p.text.section__text.testimonials__text These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+        .swiper.testimonials__swiper
+          ul.swiper-wrapper.wrapper.testimonials__list
+            li.swiper-slide.testimonials__item.testimonial
+              .testimonial__header
+                img.testimonial__customer-photo(src="./img/customers/user-1.png" alt="" loading="lazy")
+                .testimonial__customer-wrap
+                  span.testimonial__customer-name Viezh Robert
+                  span.testimonial__customer-location Warsaw, Poland
+                .testimonial__score 4.5
+              .testimonial__body
+                p “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+            li.swiper-slide.testimonials__item.testimonial
+              .testimonial__header
+                img.testimonial__customer-photo(src="./img/customers/user-2.png" alt="" loading="lazy")
+                .testimonial__customer-wrap
+                  span.testimonial__customer-name Yessica Christy
+                  span.testimonial__customer-location Shanxi, China
+                .testimonial__score 5
+              .testimonial__body
+                p “I like it because I like to travel far and still can connect with high speed.”.
+            li.swiper-slide.testimonials__item.testimonial
+              .testimonial__header
+                img.testimonial__customer-photo(src="./img/customers/user-3.png" alt="" loading="lazy")
+                .testimonial__customer-wrap
+                  span.testimonial__customer-name Kim Young Jou
+                  span.testimonial__customer-location Seoul, South Korea
+                .testimonial__score 4.0
+              .testimonial__body
+                p “This is very unusual for my business that currently requires a virtual private network that has high security.”.
+            li.swiper-slide.testimonials__item.testimonial
+              .testimonial__header
+                img.testimonial__customer-photo(src="./img/customers/user-0.png" alt="" loading="lazy")
+                .testimonial__customer-wrap
+                  span.testimonial__customer-name Viezh Robert
+                  span.testimonial__customer-location Warsaw, Poland
+                .testimonial__score 3
+              .testimonial__body
+                p “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+        .wrapper.testimonials__control
+          .testimonials__pagination
+          .testimonials__arrows
+            button.testimonials__prev
+              include ../img/icons/arrow.svg
+            button.testimonials__next
+              include ../img/icons/arrow.svg
+      // TESTIMONIALS END
+    // MAIN END
+
+    // FOOTER START
+    footer.footer
+      .wrapper.footer__wrapper
+        .subscribe
+          h2.sub-title.subscribe__title Subscribe Now for Get Special Features!
+          p.text.subscribe__text Let's subscribe with us and find the fun.
+          button.subscribe__btn.big-btn Subscribe Now
+
+        .footer__logo-wrap
+          span.logo
+            img(src="./img/logo.svg", alt="LaslesVPN Logo")
+          p.footer__text.text <b>LaslesVPN</b> is a private virtual network that has unique features and has high security.
+        .footer__end
+          ul.footer__socials.socials
+            li.socials__item
+              a.socials__link(href="#" target="_blank") 
+                img(src="./img/icons/fb.png", alt="facebook")
+            li.socials__item
+              a.socials__link(href="#" target="_blank") 
+                img(src="./img/icons/t.png", alt="twitter")
+            li.socials__item
+              a.socials__link(href="#" target="_blank") 
+                img(src="./img/icons/inst.png", alt="instagram")
+          .footer__copy ©2022 Lasles<b>VPN</b>
+        .footer__nav
+          .footer-nav-column
+            h2.footer-nav-column__title Product
+            ul.footer-nav-list
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Download
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Pricing
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Locations
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Server
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Countries
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Blog
+          .footer-nav-column
+            h2.footer-nav-column__title Engage
+            ul.footer-nav-list
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") LaslesVPN
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") FAQ
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Tutorials
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") About Us
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Privacy Policy
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Terms of Service
+          .footer-nav-column
+            h2.footer-nav-column__title Earn Money
+            ul.footer-nav-list
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Affiliate
+              li.footer-nav-list__item
+                a.footer-nav-list__link(href="#") Become Partner
+      
+    // FOOTER END
+
+    include components/scripts

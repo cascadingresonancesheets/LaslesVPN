@@ -1,0 +1,58 @@
+.global {
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  &__text {
+    padding-bottom: 155px;
+
+    b {
+      font-weight: 500;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+  }
+
+  @media screen and (max-width: 992px) {
+    &__text {
+      padding-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__text {
+      padding-bottom: 60px;
+    }
+
+    &__map {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  &__item {
+    flex-shrink: 1;
+    > img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    &__item {
+      width: 25%;
+    }
+  }
+}
